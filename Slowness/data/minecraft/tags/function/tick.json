@@ -1,0 +1,6 @@
+{
+  "values": [
+    "slowness:slow_tick",
+    "slowness:set_items_despawn_time"
+  ]
+}
