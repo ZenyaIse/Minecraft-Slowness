@@ -11,7 +11,7 @@ execute if score #t time_tick matches 3 run scoreboard players set #t time_tick 
 
 # Sleep 8 hours
 
-execute if entity @a[nbt={SleepTimer:100s}] if score #flag player_slept matches 0 run time add 8000
+execute if entity @a[nbt={SleepTimer:100s}] unless score #flag player_slept matches 1 run time add 8000
 execute if entity @a[nbt={SleepTimer:100s}] run scoreboard players set #flag player_slept 1
 
 execute if score #Time time_tick matches 0..12000 run scoreboard players set #flag player_slept 0
