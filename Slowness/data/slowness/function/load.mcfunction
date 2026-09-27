@@ -1,6 +1,7 @@
 
 gamerule minecraft:random_tick_speed 1
-gamerule minecraft:advance_time false
+gamerule minecraft:advance_time true
 
-scoreboard objectives add time_tick dummy
+time rate 0.33333
+
 scoreboard objectives add day_time dummy
